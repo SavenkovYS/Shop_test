@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function PromoItem({title, text, link}) {
+export default function PromoCard({title, text, link}) {
     return (
         <article className="promo-item">
             <h3 className="promo-item__title">{title}</h3>

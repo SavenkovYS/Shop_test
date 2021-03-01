@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('/public/fonts/roboto-300.woff') format('woff'),
+         url('/public/fonts/roboto-300.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('/public/fonts/roboto-700.woff') format('woff'),
+         url('/public/fonts/roboto-700.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('/public/fonts/open-sans-regular.woff') format('woff'),
+         url('/public/fonts/open-sans-regular.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('/public/fonts/open-sans-600.woff') format('woff'),
+         url('/public/fonts/open-sans-600.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('/public/fonts/open-sans-700.woff') format('woff'),
+         url('/public/fonts/open-sans-700.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('/public/fonts/montserrat-300.woff') format('woff'),
+         url('/public/fonts/montserrat-300.woff2') format('woff2')
+}

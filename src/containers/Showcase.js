@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TabButton from '../components/TabButton'
+import catalogueCategories from '../data/catalogueCategories'
 import ProductCard from '../components/ProductCard'
 
 export default function Showcase() {
@@ -8,12 +8,11 @@ export default function Showcase() {
         <section className="showcase">
             <h2 className="showcase__title">Our Showcase</h2>
             <div className="showcase__tab">
-                <TabButton>Fashion</TabButton>
-                <TabButton>Furnitures</TabButton>
-                <TabButton isActive>Watches</TabButton>
-                <TabButton>Mobile</TabButton>
-                <TabButton>Cloth</TabButton>
-                <TabButton>Toys</TabButton>
+                {catalogueCategories.map(category => (
+                    <button key={category.id} className={`tab-button`}>
+                        {category.name}
+                    </button>
+                ))}
             </div> 
             <ul className="showcase__list">
                 <ProductCard url="public/img/watch-1.png" name="Fashion Genuine Chain Watch" price="$ 25.36" />

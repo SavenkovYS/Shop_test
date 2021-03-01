@@ -1,12 +1,14 @@
 import React from 'react'
 
-import PromoItem from '../components/PromoItem'
-
 export default function Intro() {
     return (
         <section className="intro">
             <h2 className="visually-hidden">Hot offer</h2>
-            <PromoItem title="Summer Collection" text="25% off" link="Details" />
+            <div className="intro__container">
+                <h3 className="intro__subtitle">Summer <span>Collection</span></h3>
+                <p className="intro__text">25% <span>off</span></p>
+                <a href="#" className="intro__link"><span>Details</span></a>
+            </div>
         </section>
     )
 }
