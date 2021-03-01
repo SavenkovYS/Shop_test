@@ -1,0 +1,124 @@
+.product-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px;
+
+    box-shadow: 0px 5px 47.5px 2.5px rgba(221, 223, 224, 0.75);
+
+    &__img-container {
+        display: flex;
+        align-items: flex-end;
+        height: 270px;
+        margin-bottom: 20px;
+        
+    }
+
+    &__img {
+        object-fit: contain;
+    }
+
+    &__content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__name {
+        display: block;
+
+        margin-bottom: 15px;
+
+        color: $clr-text-sec;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    &__price {
+        margin: 0;
+        
+        font-size: 25px;
+        color: $clr-text-ter;
+        font-weight: $fw-med; 
+    }
+
+    &__button {
+        position: absolute;
+        top: 20px;
+
+        width: min-content;
+
+        color: #bbbbbb;
+        font-size: 14px;
+        line-height: 25px;
+        text-decoration: none;
+    }
+
+    &__button--likes {
+        left: 50px;
+    }
+
+    &__button--comments {
+        right: 25px;
+    }
+
+    &__button--likes::before,
+    &__button--comments::before {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__button--likes::before {
+        top: 4px;
+        left: -27px;
+
+        width: 19px;
+        height: 17px;
+
+        background-image: url('/public/img/icon-like.png');
+    }
+
+    &__button--comments::before {
+        top: 5px;
+        left: -30px;
+
+        width: 24px;
+        height: 20px;
+
+        background-image: url('/public/img/icon-comment.png');
+    }
+
+    &__add {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(50%);
+        z-index: 10;
+
+        display: inline-block;
+        padding: 17px 45px;
+
+        font-size: 20px;
+        line-height: 26px;
+        color: $clr-light;
+        font-weight: $fw-med;
+        text-align: center;
+        text-decoration: none;
+
+        border-radius: 40px;
+        background-image: -moz-linear-gradient( 64deg, rgb(140,132,249) 0%, rgb(161,101,244) 100%);
+        background-image: -webkit-linear-gradient( 64deg, rgb(140,132,249) 0%, rgb(161,101,244) 100%);
+        background-image: -ms-linear-gradient( 64deg, rgb(140,132,249) 0%, rgb(161,101,244) 100%);
+        box-shadow: 0px 5px 23.75px 1.25px rgba(240, 239, 254, 0.75);
+    }
+}
+
+  

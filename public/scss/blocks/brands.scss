@@ -1,0 +1,40 @@
+.brands {
+    padding: 250px 215px;
+    background-image: url('/public/img/brands-bg.png');
+    background-position: bottom 20px right 365px;
+    background-repeat: no-repeat;
+
+    &__container {
+        width: 40%;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 25px;
+
+        font-size: $fs-h2;
+        color: $clr-text-ter;
+        font-weight: $fw-bold;
+        line-height: $lh-primary;
+    }
+
+    &__subtitle {
+        margin: 0;
+        margin-bottom: 25px;
+
+        font-size: 25px;
+        color: $clr-text-ter;
+        line-height: 34px;
+    }
+
+    &__link {
+        color: $clr-accent;
+        text-decoration: none;
+    }
+
+    &__text {
+        font-size: 16px;
+        color: $clr-text;
+        line-height: 26px;
+    }
+}
