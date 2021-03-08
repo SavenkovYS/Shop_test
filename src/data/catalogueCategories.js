@@ -5,7 +5,7 @@ const catalogueCategories = [
     },
     {
         id: '2',
-        name: 'Furnitures'
+        name: 'Furniture'
     },
     {
         id: '3',
@@ -17,7 +17,7 @@ const catalogueCategories = [
     },
     {
         id: '5',
-        name: 'Cloth'
+        name: 'Clothes'
     },
     {
         id: '6',

@@ -70,6 +70,8 @@
         content: '';
         
         position: absolute;
+        transition: right 0.2s ease-in-out,
+                    width 0.2s ease-in-out;
          
     }
 
@@ -96,5 +98,14 @@
         border-top-color: transparent;
         border-right-color: transparent;
         border-bottom-color: transparent;
+    }
+
+    &__link:hover span::before {
+        width: 20px;
+        right: -32px;
+    }
+
+    &__link:hover span::after {
+        right: -42px;
     }
 }

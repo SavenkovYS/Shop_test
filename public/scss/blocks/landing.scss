@@ -1,0 +1,80 @@
+.landing {
+    padding: 160px 215px 110px;
+
+    color: $clr-light;
+
+    background: $clr-accent;
+    background: linear-gradient( 45deg, rgb(140,132,249) 0%, rgb(161,101,244) 100%);
+
+    &__title {
+        margin: 0;
+        margin-bottom: 80px;
+
+        font-size: $fs-h2;
+        line-height: $lh-primary;
+        color: $clr-light;
+        text-align: center;
+    }
+
+    &__form-container {
+        display: flex;
+        padding: 5px;
+
+        background-color: $clr-light;
+        border-radius: 30px;
+    }
+
+    &__email-input {
+        flex-grow: 1;
+        padding: 10px 20px;
+
+        font-size: 20px;
+        color: $clr-text-ter;
+
+        background-color: transparent;
+        border: none;
+        border-radius: 30px;
+        outline: none;
+    }
+
+    &__email-input::-webkit-input-placeholder {
+        color: $clr-text-ter;
+        font-weight: $fw-reg;
+    }
+
+    &__email-input:-moz-placeholder { 
+        color: $clr-text-ter;
+        font-weight: $fw-reg;
+    }
+
+    &__email-input::-moz-placeholder {  
+        color: $clr-text-ter;
+        font-weight: $fw-reg;
+    }
+
+    &__email-input:-ms-input-placeholder {  
+        color: $clr-text-ter;
+        font-weight: $fw-reg;
+    }
+
+    &__email-input:focus {
+        box-shadow: 0 0 0 2px $clr-accent;
+    }
+
+    &__submit {
+        width: 200px;
+        padding: 20px 15px;
+        margin-left: 10px;
+
+        font-size: 20px;
+        color: $clr-light;
+        font-weight: $fw-med;
+
+        background: $clr-accent;
+        background: linear-gradient( 62deg, rgb(140,132,249) 0%, rgb(156,108,245) 100%);
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+}
+  

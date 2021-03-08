@@ -146,6 +146,10 @@ module.exports = {
         use: ['file-loader']
       },
       {
+        test: /\.inline.svg$/,
+        loader: 'react-svg-loader',
+      },
+      {
         test: /\.(ttf|woff|woff2|eot)$/,
         use: ['file-loader']
       },
