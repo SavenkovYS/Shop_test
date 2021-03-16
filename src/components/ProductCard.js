@@ -6,7 +6,7 @@ export default function ProductCard({url, name, price}) {
     const addToCart = isHovered && <a href="#" className="product-card__add">Add to Cart</a>
     const likes = isHovered && (
         <a href="#" className="product-card__button--likes product-card__button" aria-label="Like">
-            <span className="product-card__likes-count">likes</span>
+            <span className="product-card__likes-count">122</span>
         </a>)
 
     const comments = isHovered && (
